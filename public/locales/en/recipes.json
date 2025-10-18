@@ -1,0 +1,9 @@
+{
+  "addRecipe": "Add Recipe",
+  "editRecipe": "Edit Recipe",
+  "deleteRecipe": "Delete Recipe",
+  "recipeTitle": "Recipe Title",
+  "ingredients": "Ingredients",
+  "instructions": "Instructions",
+  "cookingTime": "Cooking Time"
+}

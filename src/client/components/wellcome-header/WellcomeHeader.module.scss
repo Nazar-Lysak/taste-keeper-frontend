@@ -1,0 +1,27 @@
+@use '../../styles/variables' as *;
+
+.header {
+    position: relative;
+    width: 100%;
+    padding: 2px 8px;
+    border-bottom: 0.55px solid $medium-gray;
+    background-color: $faint-gray;
+    box-shadow: 4px -2px 5px 1px;
+    height: 56px;
+}
+
+.title {
+    margin: 11px 0;
+    text-align: center;
+    font-family: $font-accent;
+}
+
+.button {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+    padding: 4px;
+
+}

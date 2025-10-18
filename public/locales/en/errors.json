@@ -1,0 +1,8 @@
+{
+  "required": "This field is required",
+  "emailInvalid": "Please enter a valid email",
+  "passwordTooShort": "Password must be at least 8 characters",
+  "passwordsNotMatch": "Passwords do not match",
+  "recipeNotFound": "Recipe not found",
+  "savingError": "Error saving data"
+}

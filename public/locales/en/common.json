@@ -1,0 +1,11 @@
+{
+  "home": "Home",
+  "recipes": "Recipes", 
+  "favorites": "Favorites",
+  "search": "Search",
+  "settings": "Settings",
+  "back": "Back",
+  "next": "Next",
+  "save": "Save",
+  "cancel": "Cancel"
+}

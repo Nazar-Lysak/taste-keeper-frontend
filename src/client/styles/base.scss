@@ -1,0 +1,13 @@
+@use '../styles/variables.scss' as *;
+
+* {
+    font-family: $font-primary;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+
+
