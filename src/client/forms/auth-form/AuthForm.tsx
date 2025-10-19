@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion, AnimatePresence, m } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./AuthForm.module.scss";
 import { useTranslation } from "react-i18next";
 
