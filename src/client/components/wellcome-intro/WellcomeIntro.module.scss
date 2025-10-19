@@ -1,99 +1,103 @@
-@use '../../styles/variables' as *;
+@use "../../styles/variables" as *;
 
 @keyframes backgroundMove {
-    0% {
-        background-position: 0% 50%;
-    }
-    25% {
-        background-position: 100% 50%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    75% {
-        background-position: 0% 100%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .wrapper {
-    background-color: $medium-gray;
-    height: 100%;
-    display: flex;
+  background-color: $medium-gray;
+  height: 100%;
+  display: flex;
 }
 
 .left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    padding: 20px;
-    width: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 20px;
+  width: 420px;
 }
 
 .right {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem;
-    min-height: 400px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-    background-image: url("https://app.cookbookmanager.com/assets/onboarding/collage1.png");
-    background-repeat: no-repeat;
-    background-size: 120%;
-    animation: backgroundMove 20s ease-in-out infinite;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  min-height: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  background-image: url("https://app.cookbookmanager.com/assets/onboarding/collage1.png");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  animation: backgroundMove 20s ease-in-out infinite;
 }
 
 .content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    background: linear-gradient(145deg, rgba($white, 0.25) 0%, rgba($faint-gray, 0.4) 100%);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba($light-gray, 0.3);
-    border-radius: 16px;
-    height: 80%;
-    width: 80%;
-    box-shadow: 
-        0 8px 32px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba($white, 0.8);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background: linear-gradient(
+    145deg,
+    rgba($white, 0.25) 0%,
+    rgba($faint-gray, 0.4) 100%
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba($light-gray, 0.3);
+  border-radius: 16px;
+  height: 80%;
+  width: 80%;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba($white, 0.8);
 }
 
 .title {
-    font-size: 26px;
-    margin-bottom: 1rem;
-    color: $black;
-    font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 1rem;
+  color: $black;
+  font-weight: 600;
 }
 
 .description {
-    font-size: 22px;
-    line-height: 1.6;
-    color: $black;
-    max-width: 600px;
-    margin: 0 auto;
+  font-size: 22px;
+  line-height: 1.6;
+  color: $black;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .decorativeElements {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 2rem;
-    justify-content: center;
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  justify-content: center;
 }
 
 .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: $black;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $black;
 }

@@ -1,42 +1,42 @@
-@use '../../styles/variables' as *;
+@use "../../styles/variables" as *;
 
 .wrapper {
-    background-color: $white;
-    border-right: 0.55px solid $medium-gray;
-    padding: 40px 20px 20px 30px;
-    min-height: 100vh;
-    width: 320px;    
+  background-color: $white;
+  border-right: 0.55px solid $medium-gray;
+  padding: 40px 20px 20px 30px;
+  min-height: 100vh;
+  width: 320px;
 }
 
 .title {
-    color: $dark-gray;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-family: $font-accent;
+  color: $dark-gray;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: $font-accent;
 }
 
 .link {
-    display: block;
-    padding: 6px 16px;
-    text-decoration: none; 
-    transition: padding 0.3s ease;
+  display: block;
+  padding: 6px 16px;
+  text-decoration: none;
+  transition: padding 0.3s ease;
 
-    &:focus {
-        background-color: $medium-gray;
-        outline: none;
-        color: inherit;
-    }
+  &:focus {
+    background-color: $medium-gray;
+    outline: none;
+    color: inherit;
+  }
 
-    &:visited {
-        color: inherit;
-    }
+  &:visited {
+    color: inherit;
+  }
 
-    &:hover {
-        padding-left: 22px;
-    }
+  &:hover {
+    padding-left: 22px;
+  }
 }
 
 .active {
-    background-color: $light-gray;
-    color: $dark-gray;
+  background-color: $light-gray;
+  color: $dark-gray;
 }

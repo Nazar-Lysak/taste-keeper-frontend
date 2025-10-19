@@ -1,9 +1,9 @@
-@use '../../styles/variables' as *;
+@use "../../styles/variables" as *;
 
 .wrapper {
-    width: 100%;
+  width: 100%;
 }
 
 .mainContent {
-    width: calc(100% - 320px);
+  width: calc(100% - 320px);
 }
