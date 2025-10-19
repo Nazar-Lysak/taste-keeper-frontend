@@ -1,0 +1,32 @@
+{
+    "sidebar": {
+        "title": "Welcome Test Keeper App!",
+        "links": {
+            "home": "Home",
+            "help": "Help & Support",
+            "about": "About",
+            "privacy": "Privacy",
+            "feedback": "Feedback"
+        },
+        "home": {
+            "title": "Welcome to the App!",
+            "description": "This is your home page."
+        },
+        "help": {
+            "title": "Help & Support",
+            "description": "If you need assistance, feel free to reach out to our support team."
+        },
+        "about": {
+            "title": "About Us",
+            "description": "Learn more about the features and benefits of using our app."
+        },
+        "privacy": {
+            "title": "Privacy Policy",
+            "description": "Your privacy is important to us. Learn how we handle your data."
+        },
+        "feedback": {
+            "title": "Feedback",
+            "description": "We value your feedback. Let us know your thoughts and suggestions."
+        }
+    }
+}

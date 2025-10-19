@@ -1,0 +1,9 @@
+{
+  "addRecipe": "Додати рецепт",
+  "editRecipe": "Редагувати рецепт",
+  "deleteRecipe": "Видалити рецепт",
+  "recipeTitle": "Назва рецепту",
+  "ingredients": "Інгредієнти",
+  "instructions": "Інструкції",
+  "cookingTime": "Час приготування"
+}
