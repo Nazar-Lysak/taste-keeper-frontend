@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import AuthForm from "../../forms/auth-form/AuthForm";
 import style from "./WellcomeIntro.module.scss";
@@ -93,7 +93,6 @@ const WellcomeIntro = () => {
           {description}
         </motion.p>
 
-        {/* Декоративні елементи */}
         <motion.div
           className={style.decorativeElements}
           initial={{ opacity: 0, scale: 0 }}
@@ -177,6 +176,7 @@ const WellcomeIntro = () => {
               />
             }
           />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </AnimatePresence>
     </div>
