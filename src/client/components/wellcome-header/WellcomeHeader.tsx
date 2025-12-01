@@ -1,9 +1,11 @@
+import { useState} from "react";
 import { motion } from "framer-motion";
 import style from "./WellcomeHeader.module.scss";
 import { SvgSprite, Icon } from "../../icons/svgSprite.tsx";
 import { useTranslation } from "react-i18next";
 
 const WellcomeHeader = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   const { t } = useTranslation("wellcome");
   return (
     <>
@@ -28,6 +30,7 @@ const WellcomeHeader = () => {
             stiffness: 200,
           }}
           whileHover={{ scale: 1.1 }}
+          onClick={() => setMenuOpen(!menuOpen)}
         >
           <Icon id="icon-chat_bubble_outline" size={20} />
         </motion.button>

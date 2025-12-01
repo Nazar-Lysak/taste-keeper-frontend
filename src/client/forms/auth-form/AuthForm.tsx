@@ -1,11 +1,15 @@
+import { useDispatch } from "react-redux";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./AuthForm.module.scss";
 import { useTranslation } from "react-i18next";
+import { setLoggedIn } from "../../../store/userData/userAuthSlice";
 
 type AuthMode = "login" | "register" | "reset";
 
 const AuthForm = () => {
+
+  const dispatch = useDispatch();
   const { t } = useTranslation("auth");
   const [mode, setMode] = useState<AuthMode>("login");
   const [formData, setFormData] = useState({
@@ -54,6 +58,15 @@ const AuthForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log(`${mode} submitted:`, formData);
+
+    if (mode === "login") {
+      dispatch(setLoggedIn(true));
+    } else if (mode === "register") {
+      dispatch(setLoggedIn(true));
+    } else if (mode === "reset") {
+      // Handle password reset logic
+    }
+
   };
 
   const containerVariants = {
